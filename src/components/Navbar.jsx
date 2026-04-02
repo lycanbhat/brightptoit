@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 
 const links = [
@@ -39,7 +38,7 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-3 items-center h-16 lg:h-20">
+        <div className="flex items-center justify-between lg:grid lg:grid-cols-3 h-16 lg:h-20">
           {/* Logo — left col */}
           <Link to="/" className="flex items-center">
             <img
@@ -73,9 +72,44 @@ export default function Navbar() {
             </Link>
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
-              className="lg:hidden p-2 text-gray-400 hover:text-white transition-colors"
+              className="lg:hidden w-10 h-10 flex items-center justify-center rounded-xl transition-colors hover:bg-white/5"
+              aria-label="Toggle menu"
             >
-              {mobileOpen ? <X size={22} /> : <Menu size={22} />}
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                {/* Top line */}
+                <motion.line
+                  x1="3" y1="6" x2="19" y2="6"
+                  stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"
+                  className="text-gray-300"
+                  animate={mobileOpen
+                    ? { x1: 4, y1: 4, x2: 18, y2: 18 }
+                    : { x1: 3, y1: 6,  x2: 19, y2: 6  }
+                  }
+                  transition={{ duration: 0.3, ease: "easeInOut" }}
+                />
+                {/* Middle line */}
+                <motion.line
+                  x1="3" y1="11" x2="19" y2="11"
+                  stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"
+                  className="text-gray-300"
+                  animate={mobileOpen
+                    ? { opacity: 0, x1: 11, x2: 11 }
+                    : { opacity: 1, x1: 3,  x2: 19  }
+                  }
+                  transition={{ duration: 0.2, ease: "easeInOut" }}
+                />
+                {/* Bottom line */}
+                <motion.line
+                  x1="3" y1="16" x2="19" y2="16"
+                  stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"
+                  className="text-gray-300"
+                  animate={mobileOpen
+                    ? { x1: 4, y1: 18, x2: 18, y2: 4 }
+                    : { x1: 3, y1: 16, x2: 19, y2: 16 }
+                  }
+                  transition={{ duration: 0.3, ease: "easeInOut" }}
+                />
+              </svg>
             </button>
           </div>
         </div>
