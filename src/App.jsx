@@ -12,6 +12,7 @@ import Brands from "./components/Brands";
 import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 // Pages
 import AboutPage from "./pages/AboutPage";
@@ -38,6 +39,7 @@ function HomePage() {
 export default function App() {
   return (
     <BrowserRouter>
+      <WhatsAppButton />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
