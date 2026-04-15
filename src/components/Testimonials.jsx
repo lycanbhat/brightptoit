@@ -45,7 +45,7 @@ export default function Testimonials() {
   const next = () => setCurrent((c) => (c + 1) % testimonials.length);
 
   return (
-    <section id="testimonials" ref={ref} className="relative py-24 overflow-hidden">
+    <section id="testimonials" ref={ref} className="relative py-24 overflow-hidden hidden">
       <div className="orb w-80 h-80 right-0 bottom-0 opacity-10"
         style={{ background: "radial-gradient(circle, #8B5CF6, transparent)" }} />
 

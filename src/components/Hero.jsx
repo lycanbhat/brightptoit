@@ -84,7 +84,7 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.25 }}
             className="text-lg sm:text-xl text-gray-400 leading-relaxed max-w-2xl mx-auto mb-10"
           >
-            8+ years delivering reliable networking, security, AV, and IT infrastructure
+            10+ years delivering reliable networking, security, AV, and IT infrastructure
             services across Bengaluru — from corporate offices to residential complexes.
           </motion.p>
 

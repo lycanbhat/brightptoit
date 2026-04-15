@@ -29,19 +29,13 @@ export default function About() {
             className="relative"
           >
             {/* Main placeholder */}
-            <div className="glass rounded-3xl overflow-hidden aspect-[4/3] flex items-center justify-center"
+            <div className="glass rounded-3xl overflow-hidden aspect-[4/3]"
               style={{ border: "1px solid rgba(30,45,74,0.8)" }}>
-              <div className="w-full h-full flex flex-col items-center justify-center gap-3 text-gray-500"
-                style={{ background: "linear-gradient(135deg, #080F20, #0A1628)" }}>
-                <div className="w-16 h-16 rounded-2xl border-2 border-dashed border-dark-500 flex items-center justify-center">
-                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                    <rect x="3" y="3" width="18" height="18" rx="2" />
-                    <circle cx="8.5" cy="8.5" r="1.5" />
-                    <path d="m21 15-5-5L5 21" />
-                  </svg>
-                </div>
-                <span className="text-sm font-medium">About Image Placeholder</span>
-              </div>
+              <img 
+                src="/about-img.jpg" 
+                alt="BrightPro IT Team" 
+                className="w-full h-full object-cover"
+              />
             </div>
 
             {/* Floating badge */}
@@ -52,7 +46,7 @@ export default function About() {
               className="absolute -bottom-6 -right-6 glass rounded-2xl p-5 text-center"
               style={{ border: "1px solid rgba(59,130,246,0.3)" }}
             >
-              <div className="text-3xl font-extrabold gradient-text">8+</div>
+              <div className="text-3xl font-extrabold gradient-text">10+</div>
               <div className="text-xs text-gray-400 mt-1 font-medium">Years of<br />Experience</div>
             </motion.div>
           </motion.div>
@@ -69,7 +63,7 @@ export default function About() {
               <span className="gradient-text">You Can Count On</span>
             </h2>
             <p className="text-gray-400 text-lg leading-relaxed mb-6">
-              BrightPro IT Solutions brings 8+ years of hands-on expertise in networking,
+              BrightPro IT Solutions brings 10+ years of hands-on expertise in networking,
               surveillance, AV systems, and managed IT services to businesses across Bengaluru.
               We deliver scalable, cost-effective technology solutions with a proactive support
               approach that keeps your operations running smoothly.

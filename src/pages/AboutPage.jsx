@@ -25,7 +25,7 @@ const values = [
   {
     icon: Zap,
     title: "Technical Excellence",
-    desc: "Certified professionals with 8+ years of hands-on experience across networking, security, and IT infrastructure.",
+    desc: "Certified professionals with 10+ years of hands-on experience across networking, security, and IT infrastructure.",
     color: "#8B5CF6",
   },
   {
@@ -150,7 +150,7 @@ export default function AboutPage() {
               <span className="gradient-text">Success Story</span>
             </h1>
             <p className="text-gray-400 text-xl leading-relaxed max-w-2xl">
-              8+ years of hands-on experience in IT infrastructure, networking, and security —
+              10+ years of hands-on experience in IT infrastructure, networking, and security —
               delivering reliable, scalable, and cost-effective technology solutions across Bengaluru.
             </p>
           </motion.div>
@@ -164,19 +164,9 @@ export default function AboutPage() {
             {/* Image placeholder */}
             <FadeIn direction="right">
               <div className="relative">
-                <div className="glass rounded-3xl overflow-hidden aspect-[4/3] flex items-center justify-center"
+                <div className="glass rounded-3xl overflow-hidden aspect-[4/3]"
                   style={{ border: "1px solid rgba(30,45,74,0.8)" }}>
-                  <div className="w-full h-full flex flex-col items-center justify-center gap-3 text-gray-500"
-                    style={{ background: "linear-gradient(135deg, #080F20, #0A1628)" }}>
-                    <div className="w-16 h-16 rounded-2xl border-2 border-dashed border-dark-500 flex items-center justify-center">
-                      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                        <rect x="3" y="3" width="18" height="18" rx="2" />
-                        <circle cx="8.5" cy="8.5" r="1.5" />
-                        <path d="m21 15-5-5L5 21" />
-                      </svg>
-                    </div>
-                    <span className="text-sm font-medium">Team / Office Image</span>
-                  </div>
+                  <img src="/about-img.jpg" alt="BrightPro Team" className="w-full h-full object-cover" />
                 </div>
                 {/* Stat badges */}
                 <motion.div
@@ -186,7 +176,7 @@ export default function AboutPage() {
                   className="absolute -bottom-6 -right-6 glass rounded-2xl p-5 text-center"
                   style={{ border: "1px solid rgba(59,130,246,0.3)" }}
                 >
-                  <div className="text-3xl font-extrabold gradient-text">8+</div>
+                  <div className="text-3xl font-extrabold gradient-text">10+</div>
                   <div className="text-xs text-gray-400 mt-1 font-medium">Years of<br />Experience</div>
                 </motion.div>
                 <motion.div
@@ -294,19 +284,9 @@ export default function AboutPage() {
             </FadeIn>
 
             <FadeIn direction="left" delay={0.15}>
-              <div className="glass rounded-3xl overflow-hidden aspect-square flex items-center justify-center"
+              <div className="glass rounded-3xl overflow-hidden aspect-square"
                 style={{ border: "1px solid rgba(30,45,74,0.8)" }}>
-                <div className="w-full h-full flex flex-col items-center justify-center gap-3 text-gray-500"
-                  style={{ background: "linear-gradient(135deg, #080F20, #0A1628)" }}>
-                  <div className="w-16 h-16 rounded-2xl border-2 border-dashed border-dark-500 flex items-center justify-center">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                      <rect x="3" y="3" width="18" height="18" rx="2" />
-                      <circle cx="8.5" cy="8.5" r="1.5" />
-                      <path d="m21 15-5-5L5 21" />
-                    </svg>
-                  </div>
-                  <span className="text-sm font-medium">Expertise Image</span>
-                </div>
+                <img src="/about-img.jpg" alt="Expertise" className="w-full h-full object-cover" />
               </div>
             </FadeIn>
           </div>

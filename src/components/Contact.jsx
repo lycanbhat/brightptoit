@@ -6,8 +6,8 @@ const info = [
   {
     icon: MapPin,
     label: "Location",
-    value: "Bengaluru, Karnataka, India",
-    link: null,
+    value: "Ground Floor Municipal No 652 Khata No 4312/652, 22nd Cross 23rd Main Road HSR Layout, Bengaluru Urban, Karnataka - 560102",
+    link: "https://maps.google.com/?q=22nd+Cross+23rd+Main+Road+HSR+Layout+Bengaluru+560102",
   },
   {
     icon: Phone,

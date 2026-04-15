@@ -45,8 +45,8 @@ const contactInfo = [
   {
     icon: MapPin,
     label: "Our Address",
-    value: "Ground Floor, Municipal No 652, Khata No 4312/652,\n22nd Cross 23rd Main Road, Sector 2,\nBengaluru Urban, Karnataka – 560102",
-    link: "https://maps.google.com/?q=22nd+Cross+23rd+Main+Road+Sector+2+Bengaluru",
+    value: "Ground Floor Municipal No 652 Khata No 4312/652,\n22nd Cross 23rd Main Road HSR Layout,\nBengaluru Urban, Karnataka - 560102",
+    link: "https://maps.google.com/?q=22nd+Cross+23rd+Main+Road+HSR+Layout+Bengaluru+560102",
     color: "#3B82F6",
   },
   {

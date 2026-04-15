@@ -34,12 +34,12 @@ export default function Footer() {
             </a>
             <p className="text-gray-500 text-sm leading-relaxed mb-6 max-w-xs">
               Reliable IT infrastructure and managed services for businesses across
-              Bengaluru. 8+ years of hands-on expertise.
+              Bengaluru. 10+ years of hands-on expertise.
             </p>
 
             <div className="space-y-3">
               {[
-                { icon: MapPin, text: "Bengaluru, Karnataka, India" },
+                { icon: MapPin, text: "Ground Floor Municipal No 652 Khata No 4312/652, 22nd Cross 23rd Main Road HSR Layout, Bengaluru Urban, Karnataka - 560102" },
                 { icon: Phone, text: "+91-9739305983", href: "tel:+919739305983" },
                 { icon: Mail, text: "support@brightproit.com", href: "mailto:support@brightproit.com" },
               ].map(({ icon: Icon, text, href }) => (
@@ -92,8 +92,8 @@ export default function Footer() {
           <p className="text-gray-600 text-xs">
             © {new Date().getFullYear()} BrightPro IT Solutions. All rights reserved.
           </p>
-          <p className="text-gray-700 text-xs">
-            Bengaluru, Karnataka, India
+          <p className="text-gray-700 text-xs text-right max-w-[200px] sm:max-w-xs md:max-w-none">
+            Ground Floor Municipal No 652 Khata No 4312/652, 22nd Cross 23rd Main Road HSR Layout, Bengaluru Urban, Karnataka - 560102
           </p>
         </div>
       </div>
