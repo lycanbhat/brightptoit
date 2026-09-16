@@ -41,7 +41,7 @@ export default function Footer() {
               {[
                 { icon: MapPin, text: "Ground Floor Municipal No 652 Khata No 4312/652, 22nd Cross 23rd Main Road HSR Layout, Bengaluru Urban, Karnataka - 560102" },
                 { icon: Phone, text: "+91-9739305983", href: "tel:+919739305983" },
-                { icon: Mail, text: "support@brightproit.com", href: "mailto:support@brightproit.com" },
+                { icon: Mail, text: "contact@brightproit.com", href: "mailto:contact@brightproit.com" },
               ].map(({ icon: Icon, text, href }) => (
                 <div key={text} className="flex items-center gap-3 text-gray-500 text-sm">
                   <Icon size={15} className="text-blue-500 flex-shrink-0" />

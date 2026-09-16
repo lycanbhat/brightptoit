@@ -59,8 +59,8 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "support@brightproit.com",
-    link: "mailto:support@brightproit.com",
+    value: "contact@brightproit.com",
+    link: "mailto:contact@brightproit.com",
     color: "#8B5CF6",
   },
   {

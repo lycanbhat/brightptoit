@@ -18,8 +18,8 @@ const info = [
   {
     icon: Mail,
     label: "Email",
-    value: "support@brightproit.com",
-    link: "mailto:support@brightproit.com",
+    value: "contact@brightproit.com",
+    link: "mailto:contact@brightproit.com",
   },
 ];
 
