@@ -105,6 +105,8 @@ const inputStyle = { background: "rgba(5,11,24,0.8)", border: "1px solid rgba(30
 
 export default function ContactPage() {
   const [sent, setSent] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState("");
   const [form, setForm] = useState({
     name: "", email: "", phone: "", service: "", message: "",
   });
@@ -114,9 +116,24 @@ export default function ContactPage() {
   const focusStyle = (e) => (e.target.style.boxShadow = "0 0 0 3px rgba(59,130,246,0.15)");
   const blurStyle = (e) => (e.target.style.boxShadow = "none");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setSent(true);
+    setError("");
+    setSending(true);
+    try {
+      const res = await fetch("/.netlify/functions/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      if (!res.ok) throw new Error("Failed to send");
+      setSent(true);
+      setForm({ name: "", email: "", phone: "", service: "", message: "" });
+    } catch {
+      setError("Something went wrong. Please try again or contact us directly.");
+    } finally {
+      setSending(false);
+    }
   };
 
   return (
@@ -291,8 +308,12 @@ export default function ContactPage() {
                         />
                       </div>
 
-                      <button type="submit" className="btn-primary w-full justify-center">
-                        Send Message <Send size={16} />
+                      {error && (
+                        <p className="text-red-400 text-sm mb-4">{error}</p>
+                      )}
+
+                      <button type="submit" disabled={sending} className="btn-primary w-full justify-center disabled:opacity-60">
+                        {sending ? "Sending..." : "Send Message"} <Send size={16} />
                       </button>
                     </form>
                   )}
